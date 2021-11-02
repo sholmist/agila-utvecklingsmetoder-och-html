@@ -1,0 +1,22 @@
+/* h1{
+    font-size:100px;
+    color: rgb(44, 155, 81);
+    background-color: rgb(250, 208, 129);
+    text-align: center;
+} */
+
+
+.centrerad{
+    width: 100px;
+    flex: 100px;
+    margin-left: 100px;
+}
+
+.btn{
+
+    background-color:green;
+}
+
+.row{
+    border:lightgreen solid;
+}
