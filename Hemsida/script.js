@@ -1,5 +1,39 @@
-function myFunction(){
+function submitForm() {
+
+    console.log("debug");
     debugger;
-    console.log("myFunction har anropats")
-    alert("I'm an alert box");
+
+    const namn = document.forms["guestBook"]["namn"].value;
+    const epost = document.forms["guestBook"]["epost"].value;
+    const telefon = document.forms["guestBook"]["telefon"].value;
+    const meddelande = document.forms["guestBook"]["meddelande"].value;
+
+    console.log(namn);
+    console.log(epost);
+    console.log(telefon);
+    console.log(meddelande);
+
+    // Date
+    const date = Date.now();
+    console.log(date);
+    const today = new Date(date);
+    console.log(today);
+
+    // Posts
+    var message = document.getElementById("message").innerHTML;
+
+    message += `
+    ${namn}, (${epost})
+    <br>
+    ${telefon}
+    <br>
+    ${meddelande}
+    <br>
+    ${today.toUTCString()}
+    <hr>
+    `;
+
+    document.getElementById("message").innerHTML = message;
+
+    return false;
 }

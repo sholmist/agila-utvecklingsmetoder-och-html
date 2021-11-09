@@ -14,6 +14,45 @@
 
     <h1>Kontakt</h1>
     <h2>Kontaktuppgifter</h2>
+    <h2>Kontaktformulär</h2>
+    <form method="post" name="guestBook" onsubmit="return submitForm()">
+        <div>
+            <label for="namn">Namn:
+                <br>
+                <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="epost">Epost:
+                <br>
+                <input type="email" name="epost" id="epost" placeholder="ange din epost adress" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="telefon">Telefonnummer:
+                <br>
+                <input type="tel" name="telefon" id="telefon" placeholder="ange ditt telefonnummer">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="meddelande">Meddelande:
+            <br>
+            <textarea name="meddelande" id="meddelande"></textarea>
+            </label>
+        </div>
+        <div>
+            <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" required> Jag godkänner att mina uppgifter lagras.
+  
+        </div>
+        <input type="submit" value="Skicka">
+    </form>
+    <h2>Inlägg</h2>
+    <p id="message">
+    </p>
+
     <!--Kontaktformuläret ska innehålla namn, epost och meddelande.
     Epost ska vara obligatoriskt och det ska vara omöjligt att skicka
     formuläret utan att fältet innehåller en giltig epostadress. Detta ska
