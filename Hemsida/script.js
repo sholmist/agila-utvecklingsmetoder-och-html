@@ -22,16 +22,7 @@ function submitForm() {
     // Posts
     var message = document.getElementById("message").innerHTML;
 
-    message += `
-    ${namn}, (${epost})
-    <br>
-    ${telefon}
-    <br>
-    ${meddelande}
-    <br>
-    ${today.toUTCString()}
-    <hr>
-    `;
+    message = "Ditt meddelande har nu skickats!";
 
     document.getElementById("message").innerHTML = message;
 
