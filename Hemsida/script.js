@@ -24,7 +24,9 @@ function submitForm() {
 
     document.getElementById("message").innerHTML = message;
 
-    window.location.href = "tack.html";
+    document.getElementById("overlay").style.display = "block";
+
+    //window.location.href = "tack.html";
 
     return false;
 }
