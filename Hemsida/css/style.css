@@ -32,3 +32,8 @@ h1, h2, h3{
     padding: 1vw;
     font-weight: bold;
 }
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
