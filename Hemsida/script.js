@@ -3,28 +3,28 @@ function submitForm() {
     console.log("debug");
     debugger;
 
-    const namn = document.forms["guestBook"]["namn"].value;
-    const epost = document.forms["guestBook"]["epost"].value;
-    const telefon = document.forms["guestBook"]["telefon"].value;
-    const meddelande = document.forms["guestBook"]["meddelande"].value;
+    const namn = document.forms["contactForm"]["namn"].value;
+    const epost = document.forms["contactForm"]["epost"].value;
+    const meddelande = document.forms["contactForm"]["meddelande"].value;
 
     console.log(namn);
     console.log(epost);
-    console.log(telefon);
     console.log(meddelande);
 
     // Date
-    const date = Date.now();
-    console.log(date);
-    const today = new Date(date);
-    console.log(today);
+    // const date = Date.now();
+    // console.log(date);
+    // const today = new Date(date);
+    // console.log(today);
 
     // Posts
     var message = document.getElementById("message").innerHTML;
 
-    message = "Ditt meddelande har nu skickats!";
+    message = "Skickar mejl!";
 
     document.getElementById("message").innerHTML = message;
+
+    window.location.href = "tack.html";
 
     return false;
 }

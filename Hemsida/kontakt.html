@@ -15,7 +15,7 @@
     <h1>Kontakt</h1>
     <h2 id="uppgifter">Kontaktuppgifter</h2>
     <h2 id="formular">Kontaktformulär</h2>
-    <form method="post" name="guestBook" onsubmit="return submitForm()">
+    <form action="tack.html" method="post" name="contactForm" onsubmit="return submitForm()">
         <div>
             <label for="namn">Namn:
                 <br>
@@ -31,13 +31,6 @@
         </div>
         <br>
         <div>
-            <label for="telefon">Telefonnummer:
-                <br>
-                <input type="tel" name="telefon" id="telefon" placeholder="ange ditt telefonnummer">
-            </label>
-        </div>
-        <br>
-        <div>
             <label for="meddelande">Meddelande:
             <br>
             <textarea name="meddelande" id="meddelande"></textarea>
@@ -49,9 +42,7 @@
         </div>
         <input type="submit" value="Skicka">
     </form>
-    <h2>Inlägg</h2>
-    <p id="message">
-    </p>
+    <p id="message"></p>
 
     <!--Kontaktformuläret ska innehålla namn, epost och meddelande.
     Epost ska vara obligatoriskt och det ska vara omöjligt att skicka
