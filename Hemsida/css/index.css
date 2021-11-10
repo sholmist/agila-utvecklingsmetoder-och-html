@@ -1,0 +1,11 @@
+img{
+    width: 100%;
+}
+#innehåll a:hover{
+    font-weight: bold;
+}
+
+#innehåll li{
+    padding: 0.5rem 0.5rem;
+    font-weight: normal;
+}

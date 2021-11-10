@@ -2,21 +2,33 @@
 #logotyp{
     color:lightgreen;
 }
-
+a:link{
+    border: solid transparent;
+}
 a:hover, .active{
     background-color:lightseagreen !important;
-    color:linen !important;
+    color:white !important;
+    border: inherit solid !important;
 }
 
 body{
-    background-color: linen ;
+    background-color: lightseagreen ;
 }
-#test{
-    background-color: lightgreen;               
+.bg{
+    background-color: linen;
 }
-#innehåll a{
+.center{
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 1vw;
+}
+.divider{
+    height: 5vw;
+}
+
+h1, h2, h3{
+    color: lightgreen;
+    background: white;
+    padding: 1vw;
     font-weight: bold;
-}
-img{
-    width: 100%;
 }
