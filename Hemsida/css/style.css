@@ -1,0 +1,22 @@
+
+#logotyp{
+    color:lightgreen;
+}
+
+a:hover, .active{
+    background-color:lightseagreen !important;
+    color:linen !important;
+}
+
+body{
+    background-color: linen ;
+}
+#test{
+    background-color: lightgreen;               
+}
+#innehåll a{
+    font-weight: bold;
+}
+img{
+    width: 100%;
+}
