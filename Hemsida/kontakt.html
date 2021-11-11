@@ -48,37 +48,42 @@
         </div>
       </nav>
 
+      <!--Bör stylas annorlunda då sidan inte är info-->
     <h1>Kontakt</h1>
-    <h2 id="uppgifter">Kontaktuppgifter</h2>
-    <h2 id="form">Kontaktformulär</h2>
-    <form action="tack.html" method="post" name="contactForm" onsubmit="return submitForm()">
-        <!--Action funkar inte ibland-->
-        <div>
-            <label for="namn">Namn:
-                <br>
-                <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
-            </label>
-        </div>
-        <br>
-        <div>
-            <label for="epost">Epost:
-                <br>
-                <input type="email" name="epost" id="epost" placeholder="ange din epost adress" required>
-            </label>
-        </div>
-        <br>
-        <div>
-            <label for="meddelande">Meddelande:
-            <br>
-            <textarea name="meddelande" id="meddelande"></textarea>
-            </label>
-        </div>
-        <div>
-            <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" required> Jag godkänner att mina uppgifter lagras.
-  
-        </div>
-        <input type="submit" value="Skicka">
-    </form>
+    <div class="divider"></div>
+
+    <div class="bg center container-flex">
+      <h2 id="uppgifter">Kontaktuppgifter</h2>
+      <h2 id="form">Kontaktformulär</h2>
+      <form action="tack.html" method="post" name="contactForm" onsubmit="return submitForm()">
+          <!--Action funkar inte ibland-->
+          <div>
+              <label for="namn">Namn:
+                  <br>
+                  <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
+              </label>
+          </div>
+          <br>
+          <div>
+              <label for="epost">Epost:
+                  <br>
+                  <input type="email" name="epost" id="epost" placeholder="ange din epost adress" required>
+              </label>
+          </div>
+          <br>
+          <div>
+              <label for="meddelande">Meddelande:
+              <br>
+              <textarea name="meddelande" id="meddelande"></textarea>
+              </label>
+          </div>
+          <div>
+              <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" required> Jag godkänner att mina uppgifter lagras.
+    
+          </div>
+          <input type="submit" value="Skicka">
+      </form>
+    </div>
 
     <!-- <div id="overlay">
         <p id="message"></p>
