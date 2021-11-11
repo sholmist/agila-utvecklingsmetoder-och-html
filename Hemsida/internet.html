@@ -54,32 +54,54 @@
      <div class="divider"></div>
     <!--Ska finnas youtubeklipp om hur internet fungerar-->
 
-    <h2 id="Klient-server-modellen">Klient-server-modellen</h2>
-    <!--Beskriv hur det funkar-->
-    <p>
-      Ett exempel på denna modell är att klienten skickar en ”beställning” till servern t.ex. i form av en webbsida som ska visas och servern delar denna information/resurs. Det är alltså klienten som begär information och servern som tillhandahåller den. Det finns flera olika typer av klienter, t.ex. webbläsare och mailklienter. Ett vanligt misstag många gör är att beskriva en server som en dator men i själva verket är en server ett program. Du kan ha ett serverprogram installerat på din egen dator, då agerar datorn både klient och server.
-    </p>
-    <h2 id="internetkommunikation">Internetkommunikation</h2>
-    <!--Hur kommunikation funkar på internet med IP-adresser och DNS-servrar-->
-    <p>
-      Internetprotokollet (IP) standardiserar hur datorer kommunicerar med varandra. Likt principen med telefonnummer som går till en specifik telefon gör Internetprotokollet till exempel att alla internetanslutna datorer en egen IP-adress. De flesta IP-adresser bygger på protokollet IPv4 , Internet Protocol version 4, och uttrycks som decimala tal grupperade i fyra grupper åtskilda av punkter. Denna standard har också kompletterats med protokollet IPv6, Internet Protocol version 6, som skapats för att antalet möjliga adresser genom IPv4 inte kommer att räcka till. IPv6-adresser uttrycks som decimala tal grupperade i åtta grupper om fyra tecken. IPv6-adresser är 128 bitar långa medan IPv4-adresser är 32 bitar långa. Därför behövs det ett system för att översätta det vi skriver i webbläsarens adressfält till ip-nummer. När vi skriver exempelvis www.svt.se översätter DNS-systemet det till ip-numret 194.15.212.181.
-      För en dator består en adress till en webbsida av ett ip-nummer, exempelvis 194.15.212.181. Eftersom det för oss människor är i det närmaste omöjligt att komma ihåg den typen av adressen använder vi namn i textformat. Översättningen sköts av en DNS-server hos internetleverantören. Ibland kan det bli fel där eller så är servern långsam eller ouppdaterad, och då kan det dyka upp felmeddelanden av den här typen.      
-    </p>
-    <h2 id="protokoll">Protokoll</h2>
-    <!--Beskriv vad protokoll är-->
-    <p>
-      Ett protokoll är ett slags regelverk som används för att två datorer ska kunna förstå varandra på samma premisser. Att de pratar med varandra på samma språk. IP-protokollet ser alltså till att internets datorer vet hur de ska adressera varandra och TCP-protokollet ser till att paketen kommer fram.
-    </p>
-    <h2 id="http">http & https</h2>
-    <!--Vad protokollet används till och skillnaden mellan dem-->
-    <p>
-      http/https står för HyperText Transfer Protocol, s:et i https står för Secure och är ett protokoll som används för kommunikation av webbsidor över internet mellan webbläsare och servrar etc. Skillnaden mellan http och https är att https är krypterad och då säkrare att använda när det kommer till känslig information.
-    </p>
-    <h2 id="ftp">ftp & ftps</h2>
-    <p>
-      Ftp/ftps står för File Transfer Protocol och även här står s:et i ftps för Secure. Det är ett protokoll för filöverföring när man t.ex. laddar upp en hemsida. Skillnaden mellan ftp och ftps är precis som http och https, ftps en säkrare variant av ftp som är krypterad.
-    </p>
-    
+    <div class="bg center container-flex">
+      <div id="Klient-server-modellen">
+        <h2>Klient-server-modellen</h2>
+        <!--Beskriv hur det funkar-->
+        <p>
+          Ett exempel på denna modell är att klienten skickar en ”beställning” till servern t.ex. i form av en webbsida som ska visas och servern delar denna information/resurs. Det är alltså klienten som begär information och servern som tillhandahåller den.
+        </p>
+        <p>
+          Det finns flera olika typer av klienter, t.ex. webbläsare och mailklienter. Ett vanligt misstag många gör är att beskriva en server som en dator men i själva verket är en server ett program. Du kan ha ett serverprogram installerat på din egen dator, då agerar datorn både klient och server.
+        </p>
+      </div>
+      <div id="internetkommunikation">
+        <h2>Internetkommunikation</h2>
+        <!--Hur kommunikation funkar på internet med IP-adresser och DNS-servrar-->
+        <p>
+          Internetprotokollet (IP) standardiserar hur datorer kommunicerar med varandra. Likt principen med telefonnummer som går till en specifik telefon gör Internetprotokollet till exempel att alla internetanslutna datorer en egen IP-adress. De flesta IP-adresser bygger på protokollet IPv4 , Internet Protocol version 4, och uttrycks som decimala tal grupperade i fyra grupper åtskilda av punkter.
+        </p>
+        <p>
+          Denna standard har också kompletterats med protokollet IPv6, Internet Protocol version 6, som skapats för att antalet möjliga adresser genom IPv4 inte kommer att räcka till. IPv6-adresser uttrycks som decimala tal grupperade i åtta grupper om fyra tecken. 
+        </p>
+        <p>
+          IPv6-adresser är 128 bitar långa medan IPv4-adresser är 32 bitar långa. Därför behövs det ett system för att översätta det vi skriver i webbläsarens adressfält till ip-nummer. När vi skriver exempelvis www.svt.se översätter DNS-systemet det till ip-numret 194.15.212.181.
+        </p>
+        <p>
+          För en dator består en adress till en webbsida av ett ip-nummer, exempelvis 194.15.212.181. Eftersom det för oss människor är i det närmaste omöjligt att komma ihåg den typen av adressen använder vi namn i textformat. Översättningen sköts av en DNS-server hos internetleverantören. Ibland kan det bli fel där eller så är servern långsam eller ouppdaterad, och då kan det dyka upp felmeddelanden av den här typen.
+        </p>
+      </div>
+      <div id="protokoll">
+        <h2>Protokoll</h2>
+        <!--Beskriv vad protokoll är-->
+        <p>
+          Ett protokoll är ett slags regelverk som används för att två datorer ska kunna förstå varandra på samma premisser. Att de pratar med varandra på samma språk. IP-protokollet ser alltså till att internets datorer vet hur de ska adressera varandra och TCP-protokollet ser till att paketen kommer fram.
+        </p>
+      </div>
+      <div id="http">
+        <h2>http & https</h2>
+        <!--Vad protokollet används till och skillnaden mellan dem-->
+        <p>
+          http/https står för HyperText Transfer Protocol, s:et i https står för Secure och är ett protokoll som används för kommunikation av webbsidor över internet mellan webbläsare och servrar etc. Skillnaden mellan http och https är att https är krypterad och då säkrare att använda när det kommer till känslig information.
+        </p>
+      </div>
+      <div id="ftp">
+        <h2>ftp & ftps</h2>
+        <p>
+          Ftp/ftps står för File Transfer Protocol och även här står s:et i ftps för Secure. Det är ett protokoll för filöverföring när man t.ex. laddar upp en hemsida. Skillnaden mellan ftp och ftps är precis som http och https, ftps en säkrare variant av ftp som är krypterad.
+        </p>
+      </div>
+    </div>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
